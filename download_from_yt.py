@@ -31,3 +31,4 @@ def get_audio_from_youtube(link):
 
     except Exception as e:
         print(f"Couldn't Download Video: {e}")
+        return None

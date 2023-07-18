@@ -33,9 +33,13 @@ def file_names_from_int_arr(arr, ext):
     return str_arr
 
 def get_files(src, ext):
-    files = os.listdir(src)
-    int_arr = int_arr_from_file_names(files)
-    sort = quicksort(0, len(int_arr) - 1, int_arr)
-    file_names = file_names_from_int_arr(sort, ext)
+    try:
+        files = os.listdir(src)
+        int_arr = int_arr_from_file_names(files)
+        sort = quicksort(0, len(int_arr) - 1, int_arr)
+        file_names = file_names_from_int_arr(sort, ext)
+    except:
+        print("CONFIG IS INCORRECT, PATH DOES NOT EXIST")
+        return None
 
     return file_names

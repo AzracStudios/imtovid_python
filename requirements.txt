@@ -1,3 +1,4 @@
 opencv-python
 pytube
 moviepy
+pyyaml

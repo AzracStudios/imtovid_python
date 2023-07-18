@@ -26,7 +26,7 @@ Moviepy is used in this application to put all the images into a sequence with t
 
 `$ python3 main.py`
 
-Before running the application, make sure to put all the images into a directory, and name them in the order you want them to appear, starting from 0. Then, copy the path of this directory. Also copy the youtube video link that you want as the backing track.
+Before running the application, make sure to put all the images into a directory, and name them in the order you want them to appear, starting from 0. Then, copy the path of this directory and paste it in the `config.yaml` file. Also copy the youtube video link that you want as the backing track and paste that into the `config.yaml` file. And finally, tweak the other parameters in the config file before running the application
 
 ## Resources
 OpenCv documentation: https://opencv24-python-tutorials.readthedocs.io/en/latest/

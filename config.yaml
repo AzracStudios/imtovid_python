@@ -1,0 +1,10 @@
+video:
+  width: 1920
+  height: 1080
+  frame_rate: 30
+image:
+  src: "/home/azrac/Desktop/imtovid_python/test" # absolute path only
+  extension: "jpg"  # without '.'
+  seconds_per_image: 2
+audio:
+  yt_url: ""
