@@ -39,8 +39,8 @@ def compile(location, files, seconds_per_image, fps, audio_link, width, height):
     print("============ Downloading Audio ============")
     print("===========================================\n")
 
-    audio = None
-    if get_audio_from_youtube(audio_link):
+    audio = get_audio_from_youtube(audio_link)
+    if audio:
         audio = (
             AudioFileClip("./temp/audio/audio.mp3")
             .subclip(0, (len(files) - 1) * seconds_per_image)
